@@ -5,6 +5,7 @@ import { isBefore, parseISO, subHours } from 'date-fns';
 import Subscription from '../models/Subscription';
 import Meetup from '../models/Meetup';
 import User from '../models/User';
+import File from '../models/File';
 
 import Queue from '../../lib/Queue';
 import SubscriptionMail from '../jobs/SubscriptionMail';
@@ -24,6 +25,18 @@ class SubscriptionController {
             },
           },
           required: true,
+          include: [
+            {
+              model: User,
+              as: 'owner',
+              attributes: ['name'],
+            },
+            {
+              model: File,
+              as: 'banner',
+              attributes: ['id', 'path', 'url'],
+            },
+          ],
         },
       ],
       order: [[Meetup, 'date']],
