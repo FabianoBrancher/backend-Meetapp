@@ -51,12 +51,12 @@ You need to install Node.js, NPM, Postgres, MongoDB to run this project.
 If you don't want to install those databases, you can use docker instead.
 
 ### Docker config
-If you already installed docker and you're using Linux, just type in terminal command line the following:
+If you already installed docker and you're using Linux, just type in the terminal command line, the following:
 
 ```docker run --name meetappdb -e POSTGRES_USER="docker" -e POSTGRES_PASSWORD="docker" -p 5432:5432 -d -t postgres```
 
 ## Configuration
-You'll need to configure .env variable like the .env.example given in the project's root folder.
+You'll need to configure .env variable like the .env.example given in the project's SRC folder.
 
 ## Usage
 In your projects folder, open a terminal and type ``` yarn ``` to install all of the project dependencies.
