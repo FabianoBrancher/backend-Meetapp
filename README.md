@@ -59,7 +59,7 @@ If you already installed docker and you're using Linux, just type in the termina
 You'll need to configure .env variable like the .env.example given in the project's SRC folder.
 
 ## Usage
-In your projects folder, open a terminal and type ``` yarn ``` to install all of the project dependencies.
+Open the terminal in your projects folder and type ``` yarn ``` to install all of the project dependencies.
 After they finish installing, you'll need to run ```yarn dev``` to run your application. 
 Also you'll need to open another terminal tab and run ```yarn queue```.
 
