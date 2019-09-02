@@ -29,8 +29,8 @@ It's a REST API built using Node.js and ExpressJS Framework.
 
 | Routes      |                                |
 |-------------|--------------------------------|
-| /users      | POST - Registers a new User.   |
-| /sessions   | POST - Authenticates an User.  |
+| /users      | POST - Create a new user       |
+| /sessions   | POST - Authenticates an user   |
 
 
 | Auth-only Routes         |                         |
